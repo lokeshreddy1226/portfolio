@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lokesh Reddy Gangasani - Software Engineer building reliable developer platforms and financial-data systems."
+    />
+    <title>Lokesh Reddy Gangasani | Software Engineer</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <section id="profileChooser" class="profile-chooser" aria-labelledby="chooserTitle">
+      <div class="chooser-brand" aria-label="Lokesh Reddy Gangasani">
+        <span>LOKESH</span> REDDY
+      </div>
+
+      <main class="chooser-content">
+        <p class="eyebrow">Software Engineer</p>
+        <h1 id="chooserTitle">Who's watching?</h1>
+        <p class="chooser-intro">Choose the version of Lokesh's work you want to explore.</p>
+        <div id="profilesGrid" class="profiles-grid" aria-label="Audience profiles"></div>
+      </main>
+
+      <footer class="chooser-footer">San Jose, California · lokeshreddy1226@gmail.com</footer>
+    </section>
+
+    <div id="portfolioApp" class="portfolio-app" hidden>
+      <header class="site-header">
+        <button id="profileSwitchButton" class="brand-button" type="button" aria-label="Choose another viewing profile">
+          <span>LOKESH</span> REDDY
+        </button>
+        <nav class="site-nav" aria-label="Portfolio navigation">
+          <a href="#highlights">Highlights</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="header-resume" href="./assets/Lokesh_Reddy_Gangasani_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </header>
+
+      <main>
+        <section id="hero" class="hero" aria-labelledby="heroTitle">
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="hero-content">
+            <p id="heroEyebrow" class="eyebrow"></p>
+            <h1 id="heroTitle"></h1>
+            <p id="heroDescription" class="hero-description"></p>
+            <div id="heroActions" class="hero-actions"></div>
+          </div>
+        </section>
+
+        <section id="stats" class="stats-band" aria-label="Career impact"></section>
+
+        <section id="highlights" class="content-section" aria-labelledby="highlightsTitle">
+          <div class="section-heading">
+            <p id="highlightsKicker" class="eyebrow"></p>
+            <h2 id="highlightsTitle"></h2>
+          </div>
+          <div id="highlightsRow" class="content-row"></div>
+        </section>
+
+        <section id="experience" class="content-section" aria-labelledby="experienceTitle">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">The complete timeline</p>
+              <h2 id="experienceTitle">Career chapters</h2>
+            </div>
+            <p class="section-note">Tap a chapter to see the details.</p>
+          </div>
+          <div id="experienceRow" class="content-row experience-row"></div>
+        </section>
+
+        <section id="skills" class="skills-section" aria-labelledby="skillsTitle">
+          <div class="section-heading">
+            <p class="eyebrow">A practical toolkit</p>
+            <h2 id="skillsTitle">Built for systems that need to keep working</h2>
+          </div>
+          <div id="skillsGrid" class="skills-grid"></div>
+        </section>
+
+        <section id="education" class="education-section" aria-labelledby="educationTitle">
+          <div class="section-heading">
+            <p class="eyebrow">Foundation</p>
+            <h2 id="educationTitle">Education</h2>
+          </div>
+          <div class="education-list">
+            <article>
+              <p class="education-date">Aug 2022 - May 2024</p>
+              <h3>Master of Science in Software Engineering</h3>
+              <p>San Jose State University</p>
+            </article>
+            <article>
+              <p class="education-date">Jul 2017 - May 2021</p>
+              <h3>Bachelor of Technology, Computer Science and Engineering</h3>
+              <p>VNR VJIET</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contactTitle">
+          <div>
+            <p class="eyebrow">The next conversation</p>
+            <h2 id="contactTitle">Let's build something that holds up at scale.</h2>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-light" href="mailto:lokeshreddy1226@gmail.com">Email Lokesh</a>
+            <a class="button button-quiet" href="./assets/Lokesh_Reddy_Gangasani_Resume.pdf" target="_blank" rel="noreferrer">Open resume</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Lokesh Reddy Gangasani</span>
+        <span>Software Engineer · San Jose, California</span>
+      </footer>
+    </div>
+
+    <dialog id="detailDialog" class="detail-dialog" aria-labelledby="dialogTitle">
+      <button id="closeDialogButton" class="dialog-close" type="button" aria-label="Close details" title="Close">×</button>
+      <div id="dialogContent"></div>
+    </dialog>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
